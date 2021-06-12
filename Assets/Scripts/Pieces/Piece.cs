@@ -29,6 +29,7 @@ public abstract class Piece : MonoBehaviour
         
         if (p_other.rigidbody)
         {
+            StackManager.Instance?.AddToStack(transform);
             if (_joint)
             {
                 ResolveJointConnection(p_other);
