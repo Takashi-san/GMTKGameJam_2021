@@ -38,11 +38,11 @@ public class StackManager : MonoBehaviour
     Transform FindHighestItem()
     {
         Transform __highest = _base;
+        _stack.RemoveAll(__item => __item == null);
         if (_stack.Count == 0) 
         {
             return __highest;
         }
-        _stack.RemoveAll(__item => __item == null);
         
         // foreach (var __item in _stack)
         // {

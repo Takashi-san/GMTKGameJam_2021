@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78d4091c88894154ab3df1bbeec6f9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rejointTime: 5
 --- !u!212 &428573043652837144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -155,8 +156,8 @@ FixedJoint2D:
   serializedVersion: 4
   m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 500
+  m_BreakTorque: 500
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}

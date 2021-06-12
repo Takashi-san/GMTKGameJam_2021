@@ -21,6 +21,8 @@ public class PieceSpring : Piece
         __newJoint.enableCollision = __originalJoint.enableCollision;
         __newJoint.autoConfigureConnectedAnchor = __originalJoint.autoConfigureConnectedAnchor;
         __newJoint.autoConfigureDistance = __originalJoint.autoConfigureDistance;
+        __newJoint.breakForce = _joint.breakForce;
+        __newJoint.breakTorque = _joint.breakTorque;
         __newJoint.connectedBody = p_other.rigidbody;
         __newJoint.enabled = true;
         _connectedList.Add(p_other.gameObject);

@@ -29,6 +29,8 @@ public class PieceFixed : Piece
     {
         FixedJoint2D __newJoint = Takashi.GameObjectUtility.CopyComponent<FixedJoint2D>(_joint as FixedJoint2D, gameObject);
         __newJoint.enableCollision = _joint.enableCollision;
+        __newJoint.breakForce = _joint.breakForce;
+        __newJoint.breakTorque = _joint.breakTorque;
         __newJoint.connectedBody = p_other.rigidbody;
         __newJoint.enabled = true;
         _connectedList.Add(p_other.gameObject);
